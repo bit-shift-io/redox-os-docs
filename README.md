@@ -1,2 +1,3 @@
-# redox-os-docs
+# Redox OS Docs
+
 Redox OS related documentation

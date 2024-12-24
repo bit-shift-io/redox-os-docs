@@ -31,6 +31,29 @@ They show you how to create a new rust user-space app, build it into the redox i
 
 ### Relibc
 
+The git repo README.md contains useful info:
+https://gitlab.redox-os.org/redox-os/relibc
+
+
+In the above URL, under "Redox OS Testing",
+
+You will want to include the tests into your config:
+```relibc-tests = {}``` (see Include existing programs for more info).
+
+```sh
+touch relibc
+```
+
+(FM: CURRENTLY THIS STEP FAILS)
+```sh
+make prefix cr.relibc-tests image
+```
+
+- Run the tests
+
+```sh
+/usr/share/relibc-tests/bins_static/test-name
+
 for relibc
 
 1. open the dir in vscode, run 

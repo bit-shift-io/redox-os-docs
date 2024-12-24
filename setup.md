@@ -15,3 +15,10 @@ curl -sf https://gitlab.redox-os.org/redox-os/redox/raw/master/podman_bootstrap.
 and run it:
 time bash -e podman_bootstrap.sh
 
+## Launch Redox in Qemu
+
+To launch into Orbital (the default UI):
+make qemu
+
+TO launch straight into a terminal:
+make qemu gpu=no
